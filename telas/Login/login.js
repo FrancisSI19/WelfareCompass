@@ -2,51 +2,56 @@ import React from "react";
 
 
 import {
-    Button,
+  Button,
     SafeAreaView,
     StyleSheet,
     Text,
     TextInput,
     View,
-  } from 'react-native';
-  
+} from 'react-native';
+
+import AcessarLogin from "./buttonLogin";
+
   
   function Login (){
         return (
-        <View style={styledLogin.Text}>
+        <View style={styledLogin.Container}>
                      
-            <TextInput>
+            <TextInput style={styledLogin.TextInput}>
               <Text>Digite seu email</Text>
             </TextInput>
 
-            <TextInput>
+            <TextInput style={styledLogin.TextInput}>
               <Text>Digite sua senha</Text>
             </TextInput>
-                     
-            <Button title='Entrar'
-              style={styledButton.button}/>
+
+            <AcessarLogin/>
+    
         </View>
       );
     }
   
   
   const styledLogin = StyleSheet.create({
-    Text: {
-          marginTop: 50,
-          justifyContent: 'center',
-          alignItems: 'center',
-          fontSize: 20,
-        },
-                
+    Container: {
+        marginTop: 360,
+        alignSelf: 'center',
+        justifyContent: 'center',
+        alignItems: 'center',
+                        
+    },
+    TextInput: {
+      backgroundColor: `#ffffff`,
+      color: `#a9a9a9`,
+      width: 330,
+      height: 60,
+      borderRadius: 20,
+      margin: 15,
+      textAlign: 'center',
+     },
   });
 
-  const styledButton = StyleSheet.create({
-    button: {
-     
-      
-        },
-                
-  });
-  
+
+
   export default Login;
 

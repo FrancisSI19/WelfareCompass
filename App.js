@@ -22,11 +22,11 @@ function App (){
     );
   }
 
-
 const styles = StyleSheet.create({
-  sectionContainer: {
-    marginTop: 50,
-   
+    sectionContainer: {
+    backgroundColor: `#4169e1`,
+    width: "100%",
+    height: "100%",   
   },
 
 });

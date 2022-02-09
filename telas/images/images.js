@@ -7,7 +7,6 @@ import {
 import telaInicial from '../../telas/images/telaInicial.png';
 import React from 'react';
 import { Image } from 'react-native';
-import { Component } from 'react';
 
 
 function Logo() {
@@ -20,11 +19,11 @@ function Logo() {
     
     const styledImage = StyleSheet.create({
         telaInicial: {
-            marginTop: 100,
-            justifyContent: 'center',
-            alignItems: 'center',
+            marginTop: 130,
             width: 200,
             height: 200,
+            position: 'absolute',
+            alignSelf: 'center',
         },
     });
 

@@ -1,24 +1,20 @@
 
-import {
-  StyleSheet,
-  View,
-} from 'react-native';
-
-import telaInicial from '../../telas/images/telaInicial.png';
+import { StyleSheet} from 'react-native';
+import logo from '../../telas/logo/logo.png';
 import React from 'react';
 import { Image } from 'react-native';
 
 
-function Logo() {
+function HomeLogo() {
     return (
-        <Image source={telaInicial}
-            style={styledImage.telaInicial}
+        <Image source={logo}
+            style={styledImage.logoHome}
         />
     );
 }
     
     const styledImage = StyleSheet.create({
-        telaInicial: {
+        logoHome: {
             marginTop: 130,
             width: 200,
             height: 200,
@@ -27,4 +23,4 @@ function Logo() {
         },
     });
 
-export default Logo;
+export default HomeLogo;

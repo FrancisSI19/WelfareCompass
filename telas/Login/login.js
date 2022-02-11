@@ -10,7 +10,7 @@ import {
     View,
 } from 'react-native';
 
-import AcessarLogin from "./buttonLogin";
+import AcessarLogin from "./ButtonLogin";
 
   
   function Login (){

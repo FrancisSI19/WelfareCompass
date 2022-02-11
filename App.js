@@ -1,5 +1,4 @@
 import React from 'react';
-import { Component } from 'react';
 
 import {
   SafeAreaView,
@@ -8,15 +7,22 @@ import {
   View,
 } from 'react-native';
 
-import Login from './telas/Login/login';
-import Logo from './telas/images/images';
+import Login from './telas/Login/Login';
+import HomeLogo from './telas/logo/HomeLogo';
+import CadastrarRegistro from './telas/cadastrar/CadastrarRegistro';
 
 function App (){
       return (
       <View style={styles.sectionContainer}>
           <StatusBar />
-          <Logo/>
+          
+          <CadastrarRegistro />
+
+          
+          {/*
+          <HomeLogo />
           <Login />
+          */}
 
       </View>
     );

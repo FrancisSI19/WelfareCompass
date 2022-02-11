@@ -1,27 +1,31 @@
 import React from "react";
 
 import {
-    Button,
     SafeAreaView,
     StyleSheet,
     View,
+    Button,
 } from 'react-native';
-  
+ 
  
   function AcessarLogin (){
         return (
-            <View style={styledButton.Button}>
-                <Button title="Entrar" style={styledButton.Button} />
+          <View>
+            <Button title="ENTRAR" onPress={()=>{}}/>
+            
             </View>
       );
-    }
+}
     
   const styledButton = StyleSheet.create({
     Button: {
-        width: 150,
+        backgroundColor: 'blue',
+        borderRadius: 20,
+        width: 180,
         height: 60,
         marginTop: 40,
-    }      
+    },
+    
   });
 
 

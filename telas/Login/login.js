@@ -1,8 +1,6 @@
 import React from "react";
 
-
 import {
-  Button,
     SafeAreaView,
     StyleSheet,
     Text,
@@ -11,7 +9,6 @@ import {
 } from 'react-native';
 
 import AcessarLogin from "./ButtonLogin";
-
   
   function Login (){
         return (
@@ -24,8 +21,10 @@ import AcessarLogin from "./ButtonLogin";
             <TextInput style={styledLogin.TextInput}>
               <Text>Digite sua senha</Text>
             </TextInput>
-
-            <AcessarLogin/>
+            
+            <AcessarLogin />
+            
+            <Text>Novo usuário?</Text>
     
         </View>
       );

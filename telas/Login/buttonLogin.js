@@ -6,14 +6,10 @@ import {
     View,
     Button,
 } from 'react-native';
- 
- 
+
   function AcessarLogin (){
         return (
-          <View>
-            <Button title="ENTRAR" onPress={()=>{}}/>
-            
-            </View>
+          <Button title="ENTRAR" styles={styledButton.Button}/>
       );
 }
     

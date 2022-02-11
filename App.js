@@ -9,21 +9,20 @@ import {
 
 import Login from './telas/Login/Login';
 import HomeLogo from './telas/logo/HomeLogo';
+import Routers from './telas/router/Router';
+import { NavigationContainer } from '@react-navigation/native';
 import CadastrarRegistro from './telas/cadastrar/CadastrarRegistro';
+
 
 function App (){
       return (
       <View style={styles.sectionContainer}>
-          <StatusBar />
           
-          <CadastrarRegistro />
-
-          
-          {/*
+     {/*     <StatusBar />
           <HomeLogo />
           <Login />
-          */}
-
+     */}
+          <CadastrarRegistro />
       </View>
     );
   }

@@ -6,13 +6,14 @@ import {
     StyleSheet,
     
 } from "react-native";
-
+import Routers from "../router/Router";
 import LogoCadastar from "./StyledEmotion";
+
 
 function CadastrarRegistro() {
     return (
         <View style={styledCadastro.Container} >
-
+                
             <LogoCadastar/>
             
             <Text style={styledCadastro.styledText}>
@@ -20,11 +21,12 @@ function CadastrarRegistro() {
                 Para começar, {"\n"} toque no ícone
                 de adicionar na tela.
             </Text>
+              
         </View>
+
+        
     );
 }
-
-
 const styledCadastro = StyleSheet.create({
     Container: {
        

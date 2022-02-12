@@ -1,14 +1,14 @@
 import react from "react";
 import { Text, View } from "react-native";
 
-function TabHome() {
+function TabDiario() {
     return (
         <View>
-            <Text>Home</Text>
+            <Text>Diário</Text>
       </View>  
     );
 
     
 }
 
-export default TabHome;
+export default TabDiario;

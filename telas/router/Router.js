@@ -14,25 +14,26 @@ const Tab = createBottomTabNavigator();
 
 function Routers() {
     return (
-        <NavigationContainer>
-            <Tab.Navigator
-            tabBarOptions={{
-                style: {
-                    backgroundColor: '#b0c4de',
-                    },
-                    activeTintColor: '#d3d3d3',
-                    tabStyle: {
-                        paddingTop: 5,
-                    }    
-                }}
-        >
+        
+        <Tab.Navigator tabBarOptions={{
+            style: {
+                backgroundColor: '#4169e1',
+                borderTopColor: 'transparent'
+            },
+            activeTintColor: '#FFF',
+            tabStyle: {
+                paddingBottom: 5,
+                paddingTop:5,
+            }
+        }}>
             
+            <Tab.Screen name="Login" component={Login} />
             <Tab.Screen name="Diario" component={TabDiario} />
             <Tab.Screen name="New" component={TabNew} />
             <Tab.Screen name="Menu" component={TabMenu} />
 
         </Tab.Navigator>
-    </NavigationContainer>
+
         
     ); 
 }

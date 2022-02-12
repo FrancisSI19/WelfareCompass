@@ -7,11 +7,11 @@ import {
   View,
 } from 'react-native';
 
-import Login from './telas/Login/Login';
-import HomeLogo from './telas/logo/HomeLogo';
+//import Login from './telas/Login/Login';
+//import HomeLogo from './telas/logo/HomeLogo';
 import Routers from './telas/router/Router';
 import { NavigationContainer } from '@react-navigation/native';
-import CadastrarRegistro from './telas/cadastrar/CadastrarRegistro';
+//import CadastrarRegistro from './telas/cadastrar/CadastrarRegistro';
 
 
 function App (){
@@ -22,7 +22,8 @@ function App (){
           <HomeLogo />
           <Login />
      */}
-          <CadastrarRegistro />
+          <NavigationContainer><Routers /></NavigationContainer>
+      
       </View>
     );
   }

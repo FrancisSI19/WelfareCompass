@@ -9,18 +9,19 @@ import {
 } from 'react-native';
 
 import AcessarLogin from "./ButtonLogin";
-  
+
   function Login (){
         return (
         <View style={styledLogin.Container}>
-                     
-            <TextInput style={styledLogin.TextInput}>
-              <Text>Digite seu email</Text>
-            </TextInput>
-
-            <TextInput style={styledLogin.TextInput}>
-              <Text>Digite sua senha</Text>
-            </TextInput>
+                               
+            <TextInput
+              style={styledLogin.TextInput}
+              placeholder="Digite seu email"
+            />
+              
+            <TextInput
+              style={styledLogin.TextInput}
+              placeholder="Digite sua senha" />
             
             <AcessarLogin />
             
@@ -40,7 +41,7 @@ import AcessarLogin from "./ButtonLogin";
                         
     },
     TextInput: {
-      backgroundColor: `#ffffff`,
+      backgroundColor: `#ccc`,
       color: `#a9a9a9`,
       width: 330,
       height: 60,

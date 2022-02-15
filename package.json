@@ -14,12 +14,17 @@
     "@react-navigation/bottom-tabs": "^5.11.7",
     "@react-navigation/native": "^5.9.2",
     "@react-navigation/stack": "^5.14.9",
+    "add": "^2.0.6",
+    "entypo": "^2.2.1",
+    "link": "^0.1.5",
     "react": "17.0.2",
-    "react-native": "0.67.2",
+    "react-icons": "^4.3.1",
+    "react-native": "^0.67.2",
     "react-native-gesture-handler": "^2.2.0",
     "react-native-safe-area-context": "^3.3.2",
     "react-native-screens": "^3.11.0",
-    "react-native-vector-icons": "^9.0.0"
+    "react-native-vector-icons": "^9.0.0",
+    "react-router-native": "^6.2.1"
   },
   "devDependencies": {
     "@babel/core": "7.17.0",

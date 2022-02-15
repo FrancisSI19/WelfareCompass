@@ -4,14 +4,14 @@ import {
     Text,
     View,
     StyleSheet,
-    
 } from "react-native";
-import Routers from "../router/Router";
 import LogoCadastar from "./StyledEmotion";
 
 
-function CadastrarRegistro() {
+
+function NewRegister() {
     return (
+      
         <View style={styledCadastro.Container} >
                 
             <LogoCadastar/>
@@ -21,12 +21,10 @@ function CadastrarRegistro() {
                 Para começar, {"\n"} toque no ícone
                 de adicionar na tela.
             </Text>
-              
-        </View>
-
-        
+            </View>
     );
 }
+
 const styledCadastro = StyleSheet.create({
     Container: {
        
@@ -45,4 +43,4 @@ const styledCadastro = StyleSheet.create({
  
   });
 
-export default CadastrarRegistro;
+export default NewRegister;

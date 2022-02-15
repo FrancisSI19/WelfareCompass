@@ -1,14 +1,20 @@
-import react from "react";
-import { Text, View } from "react-native";
+import React from "react";
+import { Text, View, StyleSheet } from "react-native";
 
-function TabMenu() {
-
+function Menu() {
     return (
-        <View>
-            <Text>MENU</Text>
+        <View style={styles.sectionContainer}>
+            <Text>Menu</Text>
       </View>  
-    );
-    
+    );  
 }
+const styles = StyleSheet.create({
+    sectionContainer: {
+    backgroundColor: `#4169e1`,
+    width: "100%",
+    height: "100%",   
+  },
 
-export default TabMenu;
+});
+
+export default Menu;

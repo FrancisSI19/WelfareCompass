@@ -1,18 +1,23 @@
 import React from "react";
 
 import {
-    SafeAreaView,
+  Button,
     StyleSheet,
-    View,
-    Button,
 } from 'react-native';
 
-  function AcessarLogin (){
-        return (
-          <Button title="ENTRAR" styles={styledButton.Button}/>
+
+function AcessarLogin() {
+    return (
+          
+    <Button
+        title="ENTRAR"
+        styles={styledButton.Button}
+        onPress={() => this.props.navigation.navigate('CadastrarRegistro')
+        }
+/>
       );
 }
-    
+   
   const styledButton = StyleSheet.create({
     Button: {
         backgroundColor: 'blue',

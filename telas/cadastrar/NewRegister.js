@@ -7,8 +7,6 @@ import {
 } from "react-native";
 import LogoCadastar from "./StyledEmotion";
 
-
-
 function NewRegister() {
     return (
       

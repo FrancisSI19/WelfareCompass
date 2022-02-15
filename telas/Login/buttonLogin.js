@@ -1,30 +1,32 @@
+import { useNavigation } from "@react-navigation/native";
 import React from "react";
 
 import {
-  Button,
-    StyleSheet,
+  StyleSheet, Button, TouchableOpacity
 } from 'react-native';
 
+const navigation = useNavigation;
+function AcessarLogin({ navigation }) {
 
-function AcessarLogin() {
-    return (
-          
-    <Button
-        title="ENTRAR"
-        styles={styledButton.Button}
-        onPress={() => this.props.navigation.navigate('CadastrarRegistro')
-        }
-/>
-      );
+  return (
+      <Button
+        style={styledButton.Button} title="ENTRAR"
+        onPress={() => {
+          navigation.navigate('RouterHome')
+        }}/>
+             
+  );
 }
-   
+
   const styledButton = StyleSheet.create({
     Button: {
         backgroundColor: 'blue',
         borderRadius: 20,
-        width: 180,
-        height: 60,
-        marginTop: 40,
+        width: 120,
+        height: 40,
+        marginTop: 20,
+        textAlign: 'center',
+        alignSelf:'center'
     },
     
   });

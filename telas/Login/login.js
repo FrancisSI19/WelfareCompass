@@ -7,25 +7,28 @@ import {
     TextInput,
     View,
 } from 'react-native';
-
+import HomeLogo from "./logo/HomeLogo";
 import AcessarLogin from "./ButtonLogin";
 
-  function Login (){
+
+function Login() {
+  
         return (
-        <View style={styledLogin.Container}>
+          <View style={styledLogin.Container}>
+            <HomeLogo />
                                
             <TextInput
-              style={styledLogin.TextInput}
+              style={styledLogin.TextInput1}
               placeholder="Digite seu email"
             />
               
             <TextInput
-              style={styledLogin.TextInput}
+              style={styledLogin.TextInput2}
               placeholder="Digite sua senha" />
             
             <AcessarLogin />
             
-            <Text>Novo usuário?</Text>
+            <Text style={styledLogin.Novo}>Novo usuário?</Text>
     
         </View>
       );
@@ -34,13 +37,14 @@ import AcessarLogin from "./ButtonLogin";
   
   const styledLogin = StyleSheet.create({
     Container: {
-        marginTop: 360,
-        alignSelf: 'center',
         justifyContent: 'center',
         alignItems: 'center',
-                        
+        backgroundColor: `#4169e1`,
+        width: "100%",
+        height: "100%",   
     },
-    TextInput: {
+  
+    TextInput1: {
       backgroundColor: `#ccc`,
       color: `#a9a9a9`,
       width: 330,
@@ -48,10 +52,26 @@ import AcessarLogin from "./ButtonLogin";
       borderRadius: 20,
       margin: 15,
       textAlign: 'center',
-     },
+      marginTop: 80
+    },
+    
+    TextInput2: {
+      backgroundColor: `#ccc`,
+      color: `#a9a9a9`,
+      width: 330,
+      height: 60,
+      borderRadius: 20,
+      margin: 15,
+      textAlign: 'center',
+    },
+
+     
+    Novo: {
+      margin: 15,
+      textAlign: 'center',
+      marginTop:20,
+    },
   });
 
-
-
-  export default Login;
+export default Login;
 

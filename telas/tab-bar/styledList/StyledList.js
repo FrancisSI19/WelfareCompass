@@ -1,51 +1,72 @@
 import { StyleSheet } from 'react-native';
-import colors from './colors';
 
-export default StyleSheet.create({
-  information: {
-        padding: 24,
-        flexDirection: "row",
-      
+ const StyledList = StyleSheet.create({
+   information: {
+     flex: 1,
+     padding: 10,
+          
     },
-    image: {
-        width: 60,
-        height: 60,
+   
+   image: {
+    marginTop: 20,
+     marginVertical: 20,
+     marginEnd: 10,
+    marginLeft:10,
+      width: 60,
+      height: 60,
+     },
+    date: {
+      color: '#808080',
+      fontWeight: 'bold',
+      fontSize: 16,
+      marginTop: 20,
+      
         
     },
-    date: {
-        color: colors.grey,
-        fontWeight: 'bold',
-        fontSize: 16,
-  },
+        
     time: {
-        color: colors.grey,
-        fontSize: 14,
-        marginVertical: 8,
+      color: '#808080',
+      fontSize: 14,
+      marginVertical: 8,
     },
     sentimento: {
-        color: colors.red,
-        fontSize: 16,
-        fontWeight: 'bold',
-        textAlign: 'right',
-    },
+      color: '#ff0000',
+      fontSize: 16,
+      fontWeight: 'bold',
+     },
     atividades: {
-        color: colors.black,
-        fontSize: 16,
+        color:'#000000',
+        fontSize: 14,
         fontWeight: 'bold',
-        textAlign: 'right',
+        textAlign: 'center',
     },
     relatorio: {
-        color: colors.black,
-        fontSize: 16,
+        color: '#000000',
+        fontSize: 12,
         marginRight: 8,
         fontWeight: 'bold',
-        textAlign: 'right',
-        
-      },
-  divisor: {
-    marginHorizontal: 24,
-    borderBottomWidth: 1,
-    borderBottomColor: colors.cinza,
-  },
+      textAlign: 'left',
+      marginTop: 10,
+      marginEnd: 10,
+      marginLeft: 15,
+      marginVertical: 20,
+      
+      
+    },
+   divisor: {
+    flex: 0.5,
+    backgroundColor: '#ffffff',
+    borderRadius: 30,
+    width: 360,
+     height: 180,
+     flexDirection: 'row',
+     flexWrap: 'wrap',
+     justifyContent: 'center'
 
-});
+     
+     
+    },
+
+ });
+
+export default StyledList;

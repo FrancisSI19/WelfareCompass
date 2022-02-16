@@ -16,9 +16,10 @@ function Routers() {
     return (
 
             <Stack.Navigator screenOptions={{ headerShown: false }}>
-            <Stack.Screen name="Home" component={Login} />
+           
             <Stack.Screen name="RouterHome" component={RouterHome} />
             <Stack.Screen name="Menu" component={RegisterDaily} />
+            {/*<Stack.Screen name="Home" component={Login} />*/}
         </Stack.Navigator>
         
     );  

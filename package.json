@@ -11,8 +11,8 @@
   },
   "dependencies": {
     "@react-native-masked-view/masked-view": "^0.2.6",
-    "@react-navigation/bottom-tabs": "^5.11.7",
-    "@react-navigation/native": "^5.9.2",
+    "@react-navigation/bottom-tabs": "^5.11.15",
+    "@react-navigation/native": "^5.9.8",
     "@react-navigation/stack": "^5.14.9",
     "add": "^2.0.6",
     "entypo": "^2.2.1",
@@ -21,8 +21,8 @@
     "react-icons": "^4.3.1",
     "react-native": "^0.67.2",
     "react-native-gesture-handler": "^2.2.0",
-    "react-native-safe-area-context": "^3.3.2",
-    "react-native-screens": "^3.11.0",
+    "react-native-safe-area-context": "^3.4.0",
+    "react-native-screens": "^3.11.1",
     "react-native-vector-icons": "^9.0.0",
     "react-router-native": "^6.2.1"
   },

@@ -29,18 +29,18 @@ import { StyleSheet } from 'react-native';
       fontSize: 14,
       marginVertical: 8,
     },
-    sentimento: {
+    feeling: {
       color: '#ff0000',
       fontSize: 16,
       fontWeight: 'bold',
      },
-    atividades: {
+    activity: {
         color:'#000000',
         fontSize: 14,
         fontWeight: 'bold',
         textAlign: 'center',
     },
-    relatorio: {
+    register: {
         color: '#000000',
         fontSize: 12,
         marginRight: 8,
@@ -53,7 +53,7 @@ import { StyleSheet } from 'react-native';
       
       
     },
-   divisor: {
+   divider: {
     flex: 0.5,
     backgroundColor: '#ffffff',
     borderRadius: 30,
@@ -62,10 +62,7 @@ import { StyleSheet } from 'react-native';
      flexDirection: 'row',
      flexWrap: 'wrap',
      justifyContent: 'center'
-
-     
-     
-    },
+ },
 
  });
 

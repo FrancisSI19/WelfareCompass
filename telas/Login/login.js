@@ -11,7 +11,7 @@ import HomeLogo from "./logo/HomeLogo";
 import AcessarLogin from "./ButtonLogin";
 
 
-function Login() {
+function Login({navigation}) {
   
         return (
           <View style={styledLogin.Container}>
@@ -26,7 +26,7 @@ function Login() {
               style={styledLogin.TextInput2}
               placeholder="Digite sua senha" />
             
-            <AcessarLogin />
+            <AcessarLogin navigation={navigation}/>
             
             <Text style={styledLogin.Novo}>Novo usuário?</Text>
     

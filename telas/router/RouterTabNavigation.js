@@ -7,7 +7,7 @@ import Feather from 'react-native-vector-icons/Feather';
 
 import Login from "../Login/Login";
 import NewRegister from "../cadastrar/NewRegister";
-import RegisterDaily from "../tab-bar/RegisterDaily";
+import RegisterDaily from "../tab-bar/listView/RegisterDaily";
 
 
 const Tab = createBottomTabNavigator();
@@ -22,8 +22,7 @@ function RouterHome() {
                 },
                 activeTintColor: '#FFF',
                 tabStyle: {
-                    
-                    paddingTop: 5,
+                    paddingTop: 7,
                 }
             }}>
            
@@ -31,11 +30,13 @@ function RouterHome() {
                 name="Start"
                 component={NewRegister}
                 options={{
+                    tabBarLabel: '',
                     tabBarIcon: ({ size, color }) =>
                     (<Entypo
                         name="home"
                         size={size}
                         color={color}
+                        backgroundColor={"#304FFE"}
                     />
                     )
                 }}
@@ -45,11 +46,14 @@ function RouterHome() {
                 name="New "
                 component={Login}
                 options={{
-                    tabBarIcon: ({ size, color }) =>
+                    tabBarLabel: '',
+                    tabBarIcon: ({ size, color, backgroundColor }) =>
                     (<AntDesegin
                         name="pluscircle"
                         size={size}
                         color={color}
+                        backgroundColor={backgroundColor}
+                        
                     />
                     )
                 }}
@@ -59,6 +63,7 @@ function RouterHome() {
                 name="Menu"
                 component={RegisterDaily}
                 options={{
+                    tabBarLabel: '',
                     tabBarIcon: ({ size, color }) =>
                     (<Feather
                         name="list"

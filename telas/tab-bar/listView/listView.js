@@ -1,29 +1,32 @@
 import React from "react";
 
-import { Text, View, Button } from "react-native";
-import { useNavigation } from "@react-navigation/native";
+import { Text, View, Image, TouchableOpacity } from "react-native";
 import StyledList from "../styledList/StyledList";
+import List from "./List";
+import RegisterDaily from "./RegisterDaily";
+
 
 function ListView({ navigation }) {
+  
    return (
         <View>
-            <Button title="Voltar" onPress={() => navigation.goBack()} />
-
+            
+       <TouchableOpacity onPress={() => navigation.goBack()}/>
             <View style={StyledList.information}>
       
-          <View  style={StyledList.divider}>
-              <View>
-                <Image style={StyledList.image} source={image} />
-              </View>
-              <View>
-                <Text style={StyledList.date}>{date}</Text>
-                <Text style={StyledList.feeling}>{feeling}</Text>
-                <Text style={StyledList.time}>{time}</Text>
-              </View>
-              <View>
-                <Text style={StyledList.activity1}>{activity1}</Text>
-                <Text numberOfLines={2} style={StyledList.register}>{register}</Text>
-              </View>
+             <View  style={StyledList.divider}>
+                <View>
+                  <Image style={StyledList.image} source={RegisterDaily.image} />
+                </View>
+                <View>
+                  <Text style={StyledList.date}>{RegisterDaily.date}</Text>
+                  <Text style={StyledList.feeling}>{RegisterDaily.feeling}</Text>
+                  <Text style={StyledList.time}>{RegisterDaily.time}</Text>
+                </View>
+                <View>
+                  <Text style={StyledList.activity}>{RegisterDaily.activity1}</Text>
+                  <Text numberOfLines={2} style={StyledList.register}>{RegisterDaily.register}</Text>
+                </View>
           </View>
      
       </View>

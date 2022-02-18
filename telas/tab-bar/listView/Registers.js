@@ -15,7 +15,7 @@ const myRegister = [
     image: confused,
     feeling: "CONFUSO",
     time: "07:00",
-    activity1: { name:"Meditação", icons:"calendar"},
+    activity1: "Meditação",
     activity2: "Estudo",
     activity3: "Esporte",
     register: "Hoje acordei, li a bíblia, orei, fui para a academia, fiz um delicioso almoço."
@@ -27,7 +27,7 @@ const myRegister = [
     image: happy,
     feeling: "FELIZ",
     time: "07:00",
-    activity1: { name:"Estudo", icons:"calendar"},
+    activity1: "Esporte",
     activity2: "Cozinhar",
     activity3: "Esporte",
     register: "Hoje acordei, li a bíblia, orei, fui para a academia, fiz um delicioso almoço."

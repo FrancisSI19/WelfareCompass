@@ -1,17 +1,13 @@
-import React, {useState} from "react";
+import React from "react";
 
-import { Text, Image, View, TouchableOpacity, onPress } from "react-native";
+import { Text, Image, View } from "react-native";
 import StyledList from "../styledList/StyledList";
-import icons from "./icons/RegisterIcons";
-import ListView from "./listView";
-import myRegister from "./Registers";
 
-import SimpleLineIcons from "react-native-vector-icons/SimpleLineIcons";
+
 
 function List({ date, image, feeling, time, activity1, activity2, activity3, register }) {
   //const [selectedId, setSelectedId] = useState(null);
  
-
   return <>
     
       <View style={StyledList.information}>
@@ -27,8 +23,8 @@ function List({ date, image, feeling, time, activity1, activity2, activity3, reg
                 <Text style={StyledList.time}>{time}</Text>
               </View>
               <View>
-            <Text style={StyledList.activity}>{activity1.name + activity1.icons}</Text>
-            <Text numberOfLines={1} ellipsizeMode="tail" style={StyledList.register}>{register}</Text>
+                <Text style={StyledList.activity}>{activity1}</Text>
+                <Text numberOfLines={1} ellipsizeMode="tail" style={StyledList.register}>{register}</Text>
               </View>
           </View>
      

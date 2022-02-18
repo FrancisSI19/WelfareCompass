@@ -2,7 +2,7 @@ import { useNavigation } from "@react-navigation/native";
 import React from "react";
 
 import {
-  StyleSheet, Button, TouchableOpacity
+  StyleSheet, Button
 } from 'react-native';
 
 const navigation = useNavigation;

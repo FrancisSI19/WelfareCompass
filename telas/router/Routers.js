@@ -8,6 +8,7 @@ import NewRegister from "../cadastrar/NewRegister";
 import RegisterDaily from "../tab-bar/listView/RegisterDaily";
 import RouterHome from "./RouterTabNavigation";
 import { initialWindowMetrics } from "react-native-safe-area-context";
+import ListView from "../tab-bar/listView/listView";
 
 
 const Stack = createStackNavigator();
@@ -19,7 +20,8 @@ function Routers() {
             <Stack.Navigator screenOptions={{ headerShown: false }}>
             <Stack.Screen name="Home" component={Login} />
             <Stack.Screen name="RouterHome" component={RouterHome} />
-            <Stack.Screen name="Menu" component={RegisterDaily} />
+            
+            <Stack.Screen name="ListView" component={ListView} />
             
         </Stack.Navigator>
         

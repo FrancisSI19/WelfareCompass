@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigation } from "@react-navigation/native";
 
-import { View, StyleSheet, FlatList, TouchableOpacity } from "react-native";
+import { View, StyleSheet, FlatList, TouchableOpacity, Text } from "react-native";
 import List from "./List";
 import myRegister from "./Registers";
 
@@ -13,11 +13,13 @@ function RegisterDaily({navigation}) {
   para não precisar recriar toda vez que a lista for renderizada. */
 
   function renderItem({ item }) {
+    let itemSelect = {};
     
     return (
       <TouchableOpacity onPress={() => {
-        navigation.navigate('ListView')
-      }}><List {...item} /></TouchableOpacity>
+          itemSelect = item
+          navigation.navigate('ListView', {itemSelect} )
+      }}><List {...item}/></TouchableOpacity>
     );
   }
   

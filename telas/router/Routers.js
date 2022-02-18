@@ -20,7 +20,6 @@ function Routers() {
             <Stack.Navigator screenOptions={{ headerShown: false }}>
             <Stack.Screen name="Home" component={Login} />
             <Stack.Screen name="RouterHome" component={RouterHome} />
-            
             <Stack.Screen name="ListView" component={ListView} />
             
         </Stack.Navigator>

@@ -17,12 +17,9 @@ function RouterHome() {
         <Tab.Navigator screenOptions={{ headerShown: false }}
             tabBarOptions={{
                 style: {
-                    backgroundColor: '#778899',
-                    borderTopColor: 'transparent'
-                },
-                activeTintColor: '#FFF',
-                tabStyle: {
-                    paddingTop: 7,
+                    paddingVertical: 5,
+                    paddingHorizontal: 5,
+                    alignItems: 'center',
                 }
             }}>
            
@@ -47,13 +44,11 @@ function RouterHome() {
                 component={Login}
                 options={{
                     tabBarLabel: '',
-                    tabBarIcon: ({ size, color, backgroundColor }) =>
+                    tabBarIcon: ({ size, color}) =>
                     (<AntDesegin
                         name="pluscircle"
                         size={size}
                         color={color}
-                        backgroundColor={backgroundColor}
-                        
                     />
                     )
                 }}

@@ -2,37 +2,48 @@ import { StyleSheet } from 'react-native';
 
  const StyledList = StyleSheet.create({
    information: {
-     flex: 1,
-     padding: 10,
-          
+  padding: 10,
+   
     },
    
-   image: {
-    marginTop: 20,
-     marginVertical: 20,
-     marginEnd: 10,
-    marginLeft:10,
-      width: 60,
+    image: {
+    marginTop: 40,
+    width: 60,
       height: 60,
+    marginLeft: 10,
+    flexDirection: 'row',
+    flexWrap: 'wrap',
      },
     date: {
       color: '#808080',
       fontWeight: 'bold',
       fontSize: 16,
-      marginTop: 20,
+      marginLeft: 15,
+      alignItems: 'center',
+      marginStart: 30,
       
-        
     },
         
     time: {
       color: '#808080',
-      fontSize: 14,
+      fontSize: 12,
       marginVertical: 8,
+      flexDirection: 'column',
+      
+      
+
     },
     feeling: {
       color: '#ff0000',
-      fontSize: 16,
+      fontSize: 18,
       fontWeight: 'bold',
+      marginVertical: 8,
+      marginHorizontal: 10,
+      flexDirection: 'row',
+      flexWrap: 'wrap',
+      marginStart: 50,
+      
+          
      },
     activity: {
         color:'#000000',
@@ -45,23 +56,21 @@ import { StyleSheet } from 'react-native';
         fontSize: 12,
         marginRight: 8,
         fontWeight: 'bold',
-      textAlign: 'left',
-      marginTop: 10,
-      marginEnd: 10,
-      marginLeft: 15,
-      marginVertical: 20,
-      
+        textAlign: 'left',
+        marginTop: 5,
+        marginEnd: 10,
+        marginLeft: 15,
+        marginVertical: 20,
+        
       
     },
    divider: {
-    flex: 0.5,
+    
     backgroundColor: '#ffffff',
     borderRadius: 30,
     width: 360,
-     height: 180,
-     flexDirection: 'row',
-     flexWrap: 'wrap',
-     justifyContent: 'center'
+    height: 200,
+    justifyContent: 'center'
  },
 
  });

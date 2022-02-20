@@ -33,7 +33,7 @@ function RouterHome() {
                         name="home"
                         size={size}
                         color={color}
-                      
+                        backgroundColor="#fff"
                     />
                     )
                 }}

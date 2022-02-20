@@ -7,7 +7,7 @@ import FontAwesome5 from "react-native-vector-icons/FontAwesome5";
 
 
 
-function List({ date, image, feeling, time, activity1, activity2, activity3, register }) {
+function List({ date, image, feeling, time, activityIcon1, activity1, activityIcon2, activity2, activityIcon3, activity3, register }) {
   return <>
     
       <View style={StyledList.information}>
@@ -29,12 +29,18 @@ function List({ date, image, feeling, time, activity1, activity2, activity3, reg
             
         <View style={StyledList.activity}>
        
-            <Text style={StyledList.activity}>{activity1}</Text>
+          <Text style={StyledList.activity}>
+            {activityIcon1}{activity1}
+            {activityIcon2}{activity2}
+            {activityIcon3}{activity3}
+            </Text>
+            </View>
+         
             <View style={StyledList.register}>
             <Text numberOfLines={1} ellipsizeMode="tail" style={StyledList.register}>{register}</Text>
             </View>      
           
-              </View>
+             
           </View>
      
       </View>

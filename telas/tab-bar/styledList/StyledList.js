@@ -40,10 +40,6 @@ import { StyleSheet } from 'react-native';
         marginLeft: 10,
         
     },
-    icon: {
-    color:'#000000',
-    
- },
     register: {
         color: '#000000',
         fontSize: 12,
@@ -58,7 +54,7 @@ import { StyleSheet } from 'react-native';
       height: 170,
       justifyContent: 'flex-end',
       marginVertical: 10,
-      justifyContent: 'flex-end'
+      
  },
 
  });

@@ -17,14 +17,19 @@ const myRegister = [
     image: confused,
     feeling: "CONFUSO",
     time: "07:00",
-    activity1: [<FontAwesome5 name="pray" color="#969696" size={12} />, "  ", 'Meditação', "   ",
-                <FontAwesome5 name="swimmer" color="#969696" size={12} />, "  ", 'Esporte', "   ",
-                <FontAwesome5 name="chalkboard-teacher" color="#969696" size={12} />, "  ", 'Trabalho'
+    activity1: 'Meditação   ',
+    activityIcon1: [
+      <FontAwesome5 name="pray" color="#969696" size={12} />, "  ",  
     ],
-    activity2: "Estudo",
-    activity3: "Esporte",
+    activity2: "Esporte   ",
+    activityIcon2: [
+    <FontAwesome5 name="swimmer" color="#969696" size={12} />, "  ", 
+    ],
+    activity3: 'Trabalho  ', 
+    activityIcon3: [
+    <FontAwesome5 name="chalkboard-teacher" color="#969696" size={12} />, "  ",      
+    ],
     register: "Hoje acordei, li a bíblia, orei, fui para a academia, fiz um delicioso almoço."
-
   },
   {
     id: "2",

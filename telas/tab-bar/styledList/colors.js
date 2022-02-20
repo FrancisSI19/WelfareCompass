@@ -6,12 +6,13 @@ export default StyleSheet.create({
   }
 });
 
-export const colores = {
+export const colors = {
   vermelho: '#ff0000',
   preto: '#000000',
   azul: '#4169e1',
   verde: '#008000',
   cinza: '#808080',
   azulescuro: '#0000ff',
-  branco: '#ffffff'
+  branco: '#ffffff',
+  cinzaclaro: '#f5f5dc'
 };

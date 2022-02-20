@@ -23,7 +23,7 @@ function ListIcons () {
 ];
 
     teach = [
-    <FontAwesome5 name="chalkboard-teacher" color="#969696" size={14} />,
+    <FontAwesome5 name="chalkboard-teacher" color="#969696" size={12} />,
 ];
 
     dog = [

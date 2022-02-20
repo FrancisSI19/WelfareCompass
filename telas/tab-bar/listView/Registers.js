@@ -1,5 +1,7 @@
 import React from "react";
 import icons from "./icons/RegisterIcons";
+import SimpleLineIcons from "react-native-vector-icons/SimpleLineIcons";
+import FontAwesome5 from "react-native-vector-icons/FontAwesome5";
 
 const confused = require("../../assets/humores/confused.png");
 const happy = require("../../assets/humores/happy.png");
@@ -15,7 +17,10 @@ const myRegister = [
     image: confused,
     feeling: "CONFUSO",
     time: "07:00",
-    activity1: "Meditação",
+    activity1: [<FontAwesome5 name="pray" color="#969696" size={12} />, "  ", 'Meditação', "   ",
+                <FontAwesome5 name="swimmer" color="#969696" size={12} />, "  ", 'Esporte', "   ",
+                <FontAwesome5 name="chalkboard-teacher" color="#969696" size={12} />, "  ", 'Trabalho'
+    ],
     activity2: "Estudo",
     activity3: "Esporte",
     register: "Hoje acordei, li a bíblia, orei, fui para a academia, fiz um delicioso almoço."

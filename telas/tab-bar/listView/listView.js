@@ -19,8 +19,8 @@ function ListView({ route: {params, navigation} }) {
         <View style={StyledListView.information}>
            
       <TouchableOpacity onPress={() => navigation.goBack(null)}>
-         <AntDesegin
-          name="arrowleft"
+         <Entypo
+          name="arrow-with-circle-left"
            size={20}
            color="#969696"
         />

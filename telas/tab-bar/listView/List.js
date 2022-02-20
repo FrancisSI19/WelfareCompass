@@ -2,6 +2,8 @@ import React from "react";
 
 import { Text, Image, View } from "react-native";
 import StyledList from "../styledList/StyledList";
+import myRegister from "./Registers";
+import FontAwesome5 from "react-native-vector-icons/FontAwesome5";
 
 
 
@@ -24,9 +26,13 @@ function List({ date, image, feeling, time, activity1, activity2, activity3, reg
           </View> 
           
             </View>
-              <View style={StyledList.activity}>
-                <Text style={StyledList.activity}>{activity1}</Text>
-          <View style={StyledList.register}><Text numberOfLines={1} ellipsizeMode="tail" style={StyledList.register}>{register}</Text></View>      
+            
+        <View style={StyledList.activity}>
+       
+            <Text style={StyledList.activity}>{activity1}</Text>
+            <View style={StyledList.register}>
+            <Text numberOfLines={1} ellipsizeMode="tail" style={StyledList.register}>{register}</Text>
+            </View>      
           
               </View>
           </View>

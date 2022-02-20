@@ -2,75 +2,63 @@ import { StyleSheet } from 'react-native';
 
  const StyledList = StyleSheet.create({
    information: {
-  padding: 10,
-   
-    },
-   
+      padding: 10,
+   },
     image: {
-    marginTop: 40,
-    width: 60,
+      width: 60,
       height: 60,
-    marginLeft: 10,
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-     },
+      marginLeft: 10,
+      marginTop: 65
+    },
     date: {
       color: '#808080',
       fontWeight: 'bold',
       fontSize: 16,
-      marginLeft: 15,
-      alignItems: 'center',
-      marginStart: 30,
-      
+      flexDirection: 'row',
+      marginLeft: 45,
+      marginVertical: 2
     },
         
     time: {
       color: '#808080',
       fontSize: 12,
-      marginVertical: 8,
-      flexDirection: 'column',
-      
-      
-
+      flexDirection: 'column-reverse',
+      marginVertical: 2,
+      marginLeft: 5,
     },
     feeling: {
       color: '#ff0000',
       fontSize: 18,
       fontWeight: 'bold',
-      marginVertical: 8,
-      marginHorizontal: 10,
       flexDirection: 'row',
-      flexWrap: 'wrap',
-      marginStart: 50,
-      
-          
-     },
+      marginLeft: 45,
+    },
     activity: {
         color:'#000000',
-        fontSize: 14,
+        fontSize: 12,
         fontWeight: 'bold',
-        textAlign: 'center',
+        marginLeft: 10,
+        
     },
+    icon: {
+    color:'#000000',
+    
+ },
     register: {
         color: '#000000',
         fontSize: 12,
-        marginRight: 8,
         fontWeight: 'bold',
-        textAlign: 'left',
-        marginTop: 5,
-        marginEnd: 10,
-        marginLeft: 15,
-        marginVertical: 20,
-        
-      
+        alignItems: 'center',
+        marginVertical: 10,
     },
-   divider: {
-    
-    backgroundColor: '#ffffff',
-    borderRadius: 30,
-    width: 360,
-    height: 200,
-    justifyContent: 'center'
+    divider: {
+      backgroundColor: '#ffffff',
+      borderRadius: 30,
+      width: 360,
+      height: 170,
+      justifyContent: 'flex-end',
+      marginVertical: 10,
+      justifyContent: 'flex-end'
  },
 
  });

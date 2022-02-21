@@ -4,6 +4,7 @@ import {
     StyleSheet,
     Text,
     TextInput,
+    TouchableOpacity,
     View,
 } from 'react-native';
 import HomeLogo from "./logo/HomeLogo";
@@ -27,7 +28,10 @@ function Login({navigation}) {
             
             <AcessarLogin navigation={navigation}/>
             
-            <Text style={styledLogin.Novo}>Novo usuário?</Text>
+            <TouchableOpacity>
+              <Text style={styledLogin.Novo}>Novo usuário?</Text>
+            </TouchableOpacity>
+            
     
         </View>
       );
@@ -41,6 +45,7 @@ function Login({navigation}) {
         backgroundColor: `#4169e1`,
         width: "100%",
         height: "100%",   
+        
     },
   
     TextInput1: {
@@ -51,7 +56,7 @@ function Login({navigation}) {
       borderRadius: 20,
       margin: 15,
       textAlign: 'center',
-      marginTop: 80
+      marginTop: 60
     },
     
     TextInput2: {
@@ -63,12 +68,10 @@ function Login({navigation}) {
       margin: 15,
       textAlign: 'center',
     },
-
-     
     Novo: {
       margin: 15,
       textAlign: 'center',
-      marginTop:20,
+      marginTop: 50,
     },
   });
 

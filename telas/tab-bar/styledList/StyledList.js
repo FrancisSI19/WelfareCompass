@@ -1,4 +1,5 @@
 import { StyleSheet } from 'react-native';
+import myRegister from '../listView/Registers';
 
  const StyledList = StyleSheet.create({
    information: {
@@ -8,17 +9,17 @@ import { StyleSheet } from 'react-native';
       width: 60,
       height: 60,
       marginLeft: 10,
-      marginTop: 65
+      marginTop: 60,
     },
     date: {
       color: '#808080',
       fontWeight: 'bold',
-      fontSize: 16,
+      fontSize: 14,
       flexDirection: 'row',
       marginLeft: 45,
-      marginVertical: 2
+      marginVertical: 2,
+      
     },
-        
     time: {
       color: '#808080',
       fontSize: 12,
@@ -27,8 +28,7 @@ import { StyleSheet } from 'react-native';
       marginLeft: 5,
     },
     feeling: {
-      color: '#ff0000',
-      fontSize: 18,
+      fontSize: 16,
       fontWeight: 'bold',
       flexDirection: 'row',
       marginLeft: 45,
@@ -37,8 +37,8 @@ import { StyleSheet } from 'react-native';
         color:'#000000',
         fontSize: 12,
         fontWeight: 'bold',
-        marginLeft: 10,
-        
+        alignItems: 'center',
+        marginTop: 10,
     },
     register: {
         color: '#000000',
@@ -53,9 +53,10 @@ import { StyleSheet } from 'react-native';
       width: 360,
       height: 170,
       justifyContent: 'flex-end',
-      marginVertical: 10,
-      
- },
+      marginTop: 10,
+   
+   
+    },
 
  });
 

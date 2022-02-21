@@ -19,8 +19,6 @@ function HomeLogo() {
             height: 200,
             alignSelf: 'center',
             position: 'relative',
-            
-            
         },
     });
 

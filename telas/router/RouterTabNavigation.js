@@ -41,7 +41,7 @@ function RouterHome() {
             
             <Tab.Screen
                 name="New "
-                component={Login}
+                component={RegisterDaily}
                 options={{
                     tabBarLabel: '',
                     tabBarIcon: ({ size, color}) =>
@@ -56,7 +56,7 @@ function RouterHome() {
           
             <Tab.Screen
                 name="Menu"
-                component={RegisterDaily}
+                component={Login}
                 options={{
                     tabBarLabel: '',
                     tabBarIcon: ({ size, color }) =>

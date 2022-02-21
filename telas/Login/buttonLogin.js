@@ -2,31 +2,33 @@ import { useNavigation } from "@react-navigation/native";
 import React from "react";
 
 import {
-  StyleSheet, Button
+  StyleSheet, Button, View
 } from 'react-native';
 
 const navigation = useNavigation;
 function AcessarLogin({ navigation }) {
 
   return (
-      <Button
-        style={styledButton.Button} title="ENTRAR"
+    <View style={styledButton.Button}>
+        <Button
+        title="ENTRAR"
         onPress={() => {
           navigation.navigate('RouterHome')
         }}/>
+    </View>
+    
              
   );
 }
 
   const styledButton = StyleSheet.create({
     Button: {
-        backgroundColor: 'blue',
-        borderRadius: 20,
-        width: 120,
-        height: 40,
-        marginTop: 20,
-        textAlign: 'center',
-        alignSelf:'center'
+      backgroundColor: 'blue',
+      width: 100,
+      height: 40,
+      textAlign: 'center',
+      marginTop: 20,
+      borderRadius: 30
     },
     
   });

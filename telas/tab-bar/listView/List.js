@@ -3,11 +3,9 @@ import React from "react";
 import { Text, Image, View } from "react-native";
 import StyledList from "../styledList/StyledList";
 import myRegister from "./Registers";
-import FontAwesome5 from "react-native-vector-icons/FontAwesome5";
 
-
-
-function List({ date, image, feeling, time, activityIcon1, activity1, activityIcon2, activity2, activityIcon3, activity3, register }) {
+function List({ date, image, feeling, color, time, activityIcon1, activity1,
+                activityIcon2, activity2, activityIcon3, activity3, register }) {
   return <>
     
       <View style={StyledList.information}>
@@ -20,7 +18,7 @@ function List({ date, image, feeling, time, activityIcon1, activity1, activityIc
                 <View style={StyledList.date}><Text style={StyledList.date}>{date}</Text></View>
           
           <View style={StyledList.feeling}>
-            <Text style={StyledList.feeling}>{feeling}</Text>
+            <Text style={[StyledList.feeling, {color: color}]}>{feeling}</Text>
             <View style={StyledList.time}><Text style={StyledList.time}>{ time}</Text></View>
           
           </View> 

@@ -43,18 +43,24 @@ const StyledListView = StyleSheet.create({
     flexDirection: 'column-reverse'
   },
     feeling: {
-      color: '#ff0000',
+      
       fontSize: 16,
       fontWeight: 'bold',
       textAlign: 'center',
       marginTop: 15,
+      
      },
     activity: {
-        color:'#000000',
-        fontSize: 14,
-        fontWeight: 'bold',
-        textAlign: 'center',
-    },
+      color:'#000000',
+      fontSize: 14,
+      fontWeight: 'bold',
+      marginTop: 20
+  },
+  activityIcon: {
+    color:'#000000',
+    backgroundColor: 'blue',
+    borderRadius: 50,
+},
     register: {
         color: '#000000',
         fontSize: 12,
@@ -69,18 +75,28 @@ const StyledListView = StyleSheet.create({
     iconBack: {
       color: '#969696',
       fontSize: 25,
-      alignSelf: 'flex-start'
+      alignSelf: 'flex-start',
+      
   },
   divider: {
     backgroundColor: '#ffffff',
     borderRadius: 30,
     width: 360,
     height: 100,
-    justifyContent: 'space-around',
+    justifyContent: 'space-evenly',
+    alignItems: 'center',
     marginVertical: 10,
     marginHorizontal: 10,
-    
-    
+    flexDirection: 'row'
+  },
+  dividerActivity: {
+    backgroundColor: 'blue',
+    borderBottomLeftRadius: 10,
+    borderBottomRightRadius: 10,
+    borderRadius: 100,
+    flexDirection: 'column',
+    textAlign: 'center'
+  
 },
   
        

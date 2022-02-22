@@ -38,7 +38,7 @@ import myRegister from '../listView/Registers';
         fontSize: 12,
         fontWeight: 'bold',
         alignItems: 'center',
-        marginTop: 10,
+        marginTop: 5,
     },
     register: {
         color: '#000000',

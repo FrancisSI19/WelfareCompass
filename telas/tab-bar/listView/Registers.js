@@ -108,16 +108,16 @@ const myRegister = [
     time: "07:00",
     activity1: 'Meditação   ',
     activityIcon1: [
-      <FontAwesome5 name="pray" color="#969696" size={12} />, "  ",  
+      <FontAwesome5 name="pray" size={12} />, "  ",  
     ],
     activity2: "Trabalho   ", 
     activityIcon2: [
-    <FontAwesome5 name="chalkboard-teacher" color="#969696" size={12} />, "  ",      
+    <FontAwesome5 name="chalkboard-teacher" size={12} />, "  ",      
     ],
     
     activity3: "Esporte   ",
     activityIcon3: [
-    <MaterialCommunityIcons name="bike" color="#969696" size={12} />, "  ", 
+    <MaterialCommunityIcons name="bike" size={12} />, "  ", 
     ],
     register: "Hoje acordei, li a bíblia, orei, fui para a academia, fiz um delicioso almoço."
   },

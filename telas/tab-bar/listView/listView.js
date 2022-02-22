@@ -47,16 +47,16 @@ function ListView({ route: {params} , navigation }) {
             <Text style={[StyledListView.feeling, {color: color}]}>{feeling}</Text>
         </View>
        <View style={StyledListView.divider}>
-         <View>
+         <View style={StyledListView.activity}>
            <Text style={StyledListView.dividerActivity}>{activityIcon1}</Text>
           <Text style={StyledListView.activity}>{activity1}</Text>
         </View>
-         <View>
+         <View style={StyledListView.activity}>
            <Text style={StyledListView.dividerActivity}>{activityIcon2}</Text>
            <Text style={StyledListView.activity}>{activity2}</Text>
            </View>
            
-         <View>
+         <View style={StyledListView.activity}>
            <Text style={StyledListView.dividerActivity}>{activityIcon3}</Text>
            <Text style={StyledListView.activity}> {activity3} </Text>
          </View>

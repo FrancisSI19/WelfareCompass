@@ -54,7 +54,7 @@ const StyledListView = StyleSheet.create({
       color:'#000000',
       fontSize: 14,
       fontWeight: 'bold',
-      marginTop: 20
+      marginTop: 10,
   },
   activityIcon: {
     color:'#000000',
@@ -90,10 +90,12 @@ const StyledListView = StyleSheet.create({
     flexDirection: 'row'
   },
   dividerActivity: {
-    backgroundColor: 'blue',
-    borderBottomLeftRadius: 10,
-    borderBottomRightRadius: 10,
-    borderRadius: 100,
+    backgroundColor: '#dcdcdc',
+    borderBottomLeftRadius: 5,
+    borderBottomRightRadius: 5,
+    marginLeft: 30,
+    marginRight: 10,
+    borderRadius: 50,
     flexDirection: 'column',
     textAlign: 'center'
   

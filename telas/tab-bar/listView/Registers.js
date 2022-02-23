@@ -9,7 +9,6 @@ const sad = require("../../assets/humores/sad.png");
 const nervous = require("../../assets/humores/nervous.png");
 
 
-
 const myRegister = [
   {
     id: "1",

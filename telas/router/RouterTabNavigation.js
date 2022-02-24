@@ -7,7 +7,7 @@ import Feather from 'react-native-vector-icons/Feather';
 
 import Login from "../Login/Login";
 import NewRegister from "../cadastrar/NewRegister";
-import RegisterDaily from "../tab-bar/listView/RegisterDaily";
+import ModalEmotions from "../tab-bar/listView/list-modal/ModalEmotions/ModalEmotions";
 
 
 const Tab = createBottomTabNavigator();
@@ -41,7 +41,7 @@ function RouterHome() {
             
             <Tab.Screen
                 name="New "
-                component={RegisterDaily}
+                component={ModalEmotions}
                 options={{
                     tabBarLabel: '',
                     tabBarIcon: ({ size, color}) =>

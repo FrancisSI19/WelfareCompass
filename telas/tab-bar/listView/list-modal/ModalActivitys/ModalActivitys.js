@@ -26,41 +26,41 @@ function ModalActivitys() {
                  </View> 
 
                  <View>
-                     <MaterialCommunityIcons name="bike"  style={StyledListModal.activityIcon}/>
+                     <MaterialCommunityIcons name="bike"  style={StyledActivitys.activityIcon}/>
                      <Text style={StyledActivitys.activityTitle}>Esporte</Text>    
                      </View> 
                  </View>
                  <View style={StyledActivitys.dividerActivity1}>
                      <View>
-                     <FontAwesome5 name="swimmer"  style={StyledActivitys.activityIcon}/>
-                     <Text style={StyledActivitys.activityTitle}>Esporte</Text>    
+                        <FontAwesome5 name="swimmer"  style={StyledActivitys.activityIcon}/>
+                        <Text style={StyledActivitys.activityTitle}>Esporte</Text>    
                      </View> 
                      
                      <View>
-                     <AntDesign name="car"  style={StyledActivitys.activityIcon}/>
-                     <Text style={StyledActivitys.activityTitle}>Trânsito</Text>    
+                        <AntDesign name="car"  style={StyledActivitys.activityIcon}/>
+                        <Text style={StyledActivitys.activityTitle}>Trânsito</Text>    
                      </View> 
                      
                      <View>
-                     <MaterialCommunityIcons name="bike"  style={StyledActivitys.activityIcon}/>
-                     <Text style={StyledActivitys.activityTitle}>Esporte</Text>    
+                        <MaterialCommunityIcons name="bike"  style={StyledActivitys.activityIcon}/>
+                        <Text style={StyledActivitys.activityTitle}>Esporte</Text>    
                     </View> 
                  </View>
                  
                  <View style={StyledActivitys.dividerActivity1}>
                      <View>
-                     <MaterialCommunityIcons name="bike"  style={StyledActivitys.activityIcon}/>
-                     <Text style={StyledActivitys.activityTitle}>Esporte</Text>    
+                        <MaterialCommunityIcons name="bike"  style={StyledActivitys.activityIcon}/>
+                        <Text style={StyledActivitys.activityTitle}>Esporte</Text>    
                      </View> 
                      
                      <View>
-                     <MaterialCommunityIcons name="bike"  style={StyledActivitys.activityIcon}/>
-                     <Text style={StyledActivitys.activityTitle}>Esporte</Text>    
+                        <MaterialCommunityIcons name="bike"  style={StyledActivitys.activityIcon}/>
+                        <Text style={StyledActivitys.activityTitle}>Esporte</Text>    
                      </View> 
                      
                      <View>
-                     <MaterialCommunityIcons name="bike"  style={StyledActivitys.activityIcon}/>
-                     <Text style={StyledActivitys.activityTitle}>Esporte</Text>    
+                        <MaterialCommunityIcons name="bike"  style={StyledActivitys.activityIcon}/>
+                        <Text style={StyledActivitys.activityTitle}>Esporte</Text>    
                     </View> 
                      </View>
             </View>

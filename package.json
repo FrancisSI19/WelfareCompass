@@ -17,6 +17,7 @@
     "add": "^2.0.6",
     "entypo": "^2.2.1",
     "link": "^0.1.5",
+    "moment": "^2.29.1",
     "react": "17.0.2",
     "react-icons": "^4.3.1",
     "react-native": "^0.67.2",

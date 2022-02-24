@@ -1,12 +1,12 @@
 import React from "react";
 import { TextInput, Text, View } from "react-native";
-import StyledListModal from "./StyledListModal";
+import StyledRegister from "./StyledRegister";
 
 function ModalRegister() {
     return (
-        <View style={StyledListModal.dividerRegister}>
+        <View style={StyledRegister.dividerRegister}>
             <TextInput
-                style={StyledListModal.activityInput}
+                style={StyledRegister.activityInput}
                 placeholder="Conte como foi seu dia hoje" />
         </View>
     );

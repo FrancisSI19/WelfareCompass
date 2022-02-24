@@ -161,10 +161,8 @@ const StyledListModal = StyleSheet.create({
     color: '#a9a9a9',
     
  },
-  
-  
-       
- });
+      
+});
 
 
 export default StyledListModal;

@@ -5,31 +5,32 @@ import {
   Image,
   TouchableOpacity,
   Modal,
-  SafeAreaView
+  SafeAreaView,
+  ScrollView
 } from "react-native";
 
-import StyledEmotions from "./StyledEmotions";
-import ModalActivitys from "../ModalActivitys/ModalActivitys";
 import ModalRegister from "../ModalRegister/ModalRegister";
 import SaveRegister from "../ModalButton/ModalButtonSave";
 
-
+import StyledEmotions from "./StyledEmotions";
 import AntDesign from "react-native-vector-icons/AntDesign";
 
 
-import sleeping from '../../../../assets/humores/sleeping.png';
+/*import sleeping from '../../../../assets/humores/sleeping.png';
 import happy from '../../../../assets/humores/happy.png';
 import sad from '../../../../assets/humores/sad.png';
 import nervous from '../../../../assets/humores/nervous.png';
 import confused from '../../../../assets/humores/confused.png';
+*/
 import DateTime from "../ModalDateTime/ModalDateTime";
-
+import ApiService from "../../../../Services/ApiService";
+import ModalActivitys from "../ModalActivitys/ModalActivitys";
 
 function ModalEmotions() {
   
   const [visivel, setVisivel] = useState(true);
- 
-  /*const [date, setDate] = useState(new Date());
+     
+   /*const [date, setDate] = useState(new Date());
   const [mode, setMode] = useState('date');
   const [show, setShow] = useState(false);
   const [text, setText] = useState('Empty');
@@ -55,16 +56,17 @@ function ModalEmotions() {
   */
   return (
      
-    <SafeAreaView style={StyledEmotions.information}>
+  
       
          <Modal
             animationType="slide"
             transparent={true}
-            visible={visivel}
-            style={ StyledEmotions.information }
-          >
+          visible={visivel}
+          style={StyledEmotions.information}
+    >
+      <View >
             <View>
-              <TouchableOpacity onPress={() => this.setState({ isModalOpen: true })}>
+              <TouchableOpacity onPress={() => {setVisivel(false)}}>
                 <AntDesign
                 name="close"
                 style={StyledEmotions.iconClose}
@@ -75,18 +77,21 @@ function ModalEmotions() {
             <View>
                 <Text style={StyledEmotions.title}>
                     Como você está hoje?
-                </Text>
+            </Text>
+                
+                <DateTime />
+          
         </View>
-              <DateTime />
+              
           
           <View style={StyledEmotions.divider}>
         
             <View>
-              <Image source={sleeping} style={StyledEmotions.image} />
-              <Text style={StyledEmotions.feeling}>Sono</Text>
+              <Image source={{uri: useState.daily_entries}} style={StyledEmotions.image} />
+              {/*<Text style={StyledEmotions.feeling}>Sono</Text>*/}
             </View>
         
-            <View>
+            {/*<View>
               <Image source={happy} style={StyledEmotions.image} />
               <Text style={StyledEmotions.feeling}>Feliz</Text>
             </View>
@@ -102,13 +107,16 @@ function ModalEmotions() {
               <View>
                 <Image source={confused} style={StyledEmotions.image} />
                 <Text style={StyledEmotions.feeling}>Cansado</Text>
-              </View>
-          </View>
-              <ModalActivitys />
+            </View>*/}
+      
               <ModalRegister />
               <SaveRegister />
+       
+             
+          </View>
+          </View>
           </Modal>
-      </SafeAreaView>
+
      
      
   );

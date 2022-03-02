@@ -1,46 +1,38 @@
-import React from "react";
-import { useNavigation } from "@react-navigation/native";
+import React, { useEffect, useState } from "react";
+import { View, Text, FlatList } from "react-native";
+import ModalActivitys from "./list-modal/ModalActivitys/ModalActivitys";
 
-import { View, StyleSheet, FlatList, TouchableOpacity, Text } from "react-native";
-import List from "./List";
-import myRegister from "./Registers";
+import ApiService from "../../Services/ApiService";
+import ModalEmotions from "./list-modal/ModalEmotions/ModalEmotions";
+import StyledActivitys from "./list-modal/ModalActivitys/StyledActivitys";
+function RegisterDaily() {
+    const [activities, setActivities] = useState([]);
 
+    useEffect(() => {
+        async function getStorage() {
+            ApiService.get("activities/")
+                .then(response => {
+                const data = response.data
+                setActivities(data)
+                })
+                .catch(error => console.log(error))
+            }
+            getStorage()
+    }, [])
 
-const navigation = useNavigation;
-function RegisterDaily({navigation}) {
-  
-  /* função renderItem criada fora do flatlist
-  para não precisar recriar toda vez que a lista for renderizada. */
-
-  function renderItem({ item }) {
-    let itemSelect = {};
-    
+    const columns = 3;
     return (
-      <TouchableOpacity onPress={() => {
-          itemSelect = item
-          navigation.navigate('ListView', {itemSelect} )
-      }}><List {...item}/></TouchableOpacity>
-    );
-  }
-  
-    return (
-        <View>
-        <FlatList
-          data={myRegister}
-          renderItem={renderItem}
-          keyExtractor={(item) => item.id}
-          />
+        
+        <View style={StyledActivitys.divider} >
+            <FlatList
+                numColumns={columns} 
+                data={activities}
+                keyExtractor={ item => item.id.toString()}
+                renderItem={({item}) => <ModalActivitys {...item} />}
+            />
       </View>  
-    );  
+
+    );
 }
-const styles = StyleSheet.create({
-    sectionContainer: {
-    backgroundColor: "#f0f8ff",
- 
- },
-
-});
-
-
 export default RegisterDaily;
 

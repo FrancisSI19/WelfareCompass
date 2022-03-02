@@ -3,6 +3,9 @@ import { StyleSheet } from 'react-native';
 
 
 const StyledDateTime = StyleSheet.create({
+    information: {
+        alignItems: 'center'
+    },
     date: {
         color: '#808080',
         fontWeight: 'bold',

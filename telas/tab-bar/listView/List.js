@@ -2,7 +2,7 @@ import React from "react";
 
 import { Text, Image, View } from "react-native";
 import StyledList from "../styledList/StyledList";
-import myRegister from "./Registers";
+
 
 function List({ date, image, feeling, color, time, activityIcon1, activity1,
                 activityIcon2, activity2, activityIcon3, activity3, register }) {

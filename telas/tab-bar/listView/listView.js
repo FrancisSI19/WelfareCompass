@@ -5,7 +5,7 @@ import StyledListView from "../styledList/StyledListView";
 
 import Entypo from 'react-native-vector-icons/Entypo';
 import SimpleLineIcons from "react-native-vector-icons/SimpleLineIcons";
-import myRegister from "./Registers";
+
 
 
 function ListView({ route: {params} , navigation }) {

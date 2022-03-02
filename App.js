@@ -5,11 +5,10 @@ import { NavigationContainer } from '@react-navigation/native';
 
 
 function App() {
-  
+
   return (
     <NavigationContainer>
       <Routers />
-      
     </NavigationContainer>
   );
 }

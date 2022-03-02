@@ -4,8 +4,6 @@ import { StyleSheet } from 'react-native';
 
 const StyledEmotions = StyleSheet.create({
   information: {
-    flex: 1,
-    padding: 24,
     backgroundColor: '#f8f8ff',
     alignItems: 'center'
   },
@@ -51,6 +49,16 @@ const StyledEmotions = StyleSheet.create({
     marginVertical: 10,
     marginHorizontal: 10,
     flexDirection: 'row'
+  },
+  dividerFooter: {
+    backgroundColor: '#ffffff',
+    borderRadius: 30,
+    width: 360,
+    height: 100,
+    alignItems: 'center',
+    marginVertical: 10,
+    marginHorizontal: 10,
+    marginTop: 1000,
   },
        
  });

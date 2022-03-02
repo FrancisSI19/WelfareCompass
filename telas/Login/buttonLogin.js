@@ -23,7 +23,6 @@ function AcessarLogin({ navigation }) {
 
   const styledButton = StyleSheet.create({
     Button: {
-      backgroundColor: 'blue',
       width: 100,
       height: 40,
       textAlign: 'center',

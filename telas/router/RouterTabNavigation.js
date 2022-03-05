@@ -7,7 +7,6 @@ import Feather from 'react-native-vector-icons/Feather';
 
 import Login from "../Login/Login";
 import NewRegister from "../cadastrar/NewRegister";
-import ModalEmotions from "../tab-bar/listView/list-modal/ModalEmotions/ModalEmotions";
 import RegisterDaily from "../tab-bar/listView/RegisterDaily";
 import ModalActivitys from "../tab-bar/listView/list-modal/ModalActivitys/ModalActivitys";
 
@@ -16,6 +15,9 @@ import ModalActivitys from "../tab-bar/listView/list-modal/ModalActivitys/ModalA
 const Tab = createBottomTabNavigator();
 
 function RouterHome() {
+
+    const modalActivities = () => <View />
+
     return (
         <Tab.Navigator screenOptions={{ headerShown: false }}
             tabBarOptions={{
@@ -43,8 +45,15 @@ function RouterHome() {
             />
             
             <Tab.Screen
-                name="New "
-                component={RegisterDaily}
+                name="modalActivities"
+                component={modalActivities}
+                listeners={({ navigation }) => ({
+                    tabPress: (e) => {
+                        e.preventDefault()
+                        navigation.navigate("ModalEmotions")
+                    }
+                })}
+                
                 options={{
                     tabBarLabel: '',
                     tabBarIcon: ({ size, color}) =>
@@ -58,8 +67,8 @@ function RouterHome() {
             />
           
             <Tab.Screen
-                name="Menu"
-                component={Login}
+                name="New "
+                component={RegisterDaily}
                 options={{
                     tabBarLabel: '',
                     tabBarIcon: ({ size, color }) =>

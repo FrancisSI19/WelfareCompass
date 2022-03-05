@@ -5,7 +5,9 @@ import { StyleSheet } from 'react-native';
 const StyledEmotions = StyleSheet.create({
   information: {
     backgroundColor: '#f8f8ff',
-    alignItems: 'center'
+    alignItems: 'center',
+    
+    
   },
   title: {
     color:'#000000',
@@ -18,6 +20,8 @@ const StyledEmotions = StyleSheet.create({
     alignSelf: 'center',
     width: 40,
     height: 40,
+    flexDirection: 'row',
+ 
   },
     feeling: {
       color: '#008000',
@@ -51,15 +55,9 @@ const StyledEmotions = StyleSheet.create({
     flexDirection: 'row'
   },
   dividerFooter: {
-    backgroundColor: '#ffffff',
-    borderRadius: 30,
-    width: 360,
-    height: 100,
-    alignItems: 'center',
-    marginVertical: 10,
-    marginHorizontal: 10,
-    marginTop: 1000,
+    marginTop: 950
   },
+
        
  });
 

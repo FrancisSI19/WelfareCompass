@@ -1,49 +1,39 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { View, Text, FlatList } from "react-native";
 
-import { Text, Image, View } from "react-native";
-import StyledList from "../styledList/StyledList";
+import ApiService from "../../Services/ApiService";
+import ModalEmotions from "./list-modal/ModalEmotions/ModalEmotions";
 
 
-function List({ date, image, feeling, color, time, activityIcon1, activity1,
-                activityIcon2, activity2, activityIcon3, activity3, register }) {
-  return <>
-    
-      <View style={StyledList.information}>
-      
-          <View  style={StyledList.divider}>
-              <View style={StyledList.image}>
-                <Image style={StyledList.image} source={image} />
-              </View>
-          <View>
-                <View style={StyledList.date}><Text style={StyledList.date}>{date}</Text></View>
-          
-          <View style={StyledList.feeling}>
-            <Text style={[StyledList.feeling, {color: color}]}>{feeling}</Text>
-            <View style={StyledList.time}><Text style={StyledList.time}>{ time}</Text></View>
-          
-          </View> 
-          
-            </View>
-            
-        <View style={StyledList.activity}>
-       
-          <Text style={StyledList.activity}>
-            {activityIcon1}{activity1}
-            {activityIcon2}{activity2}
-            {activityIcon3}{activity3}
-            </Text>
-            </View>
-         
-            <View style={StyledList.register}>
-            <Text numberOfLines={1} ellipsizeMode="tail" style={StyledList.register}>{register}</Text>
-            </View>      
-          
-             
-          </View>
-     
-      </View>
-    
-  </>
+function ListEmotions() {
+
+  const [emotions, setEmotions] = useState([]);
+
+    useEffect(() => {
+        async function getStorage() {
+            ApiService.get("daily_entries/")
+                .then(response => {
+                const data = response.data
+                setEmotions(data)
+                })
+                .catch(error => console.log(error))
+            }
+            getStorage()
+    }, [])
+  console.warn(emotions);
+
+    const columns = 3;
+    return (
+        
+        <View style={StyledActivitys.divider} >
+            <FlatList
+                numColumns={columns} 
+                data={emotions}
+                keyExtractor={ item => item.id.toString()}
+                renderItem={({item}) => <ModalEmotions {...item} />}
+            />
+      </View>  
+
+    );
 }
-
-export default List;
+export default ListEmotions;

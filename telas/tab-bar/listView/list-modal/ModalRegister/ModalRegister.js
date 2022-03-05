@@ -1,13 +1,15 @@
 import React from "react";
 import { TextInput, Text, View } from "react-native";
 import StyledRegister from "./StyledRegister";
+import SaveRegister from "../ModalButton/ModalButtonSave";
 
 function ModalRegister() {
     return (
-        <View style={StyledRegister.dividerRegister}>
+        <View style={StyledRegister.activityInput}>
             <TextInput
-                style={StyledRegister.activityInput}
-                placeholder="Conte como foi seu dia hoje" />
+                placeholderTextColor={"black"}
+                placeholder="Conte como foi seu dia hoje." />
+            <SaveRegister />
         </View>
     );
 }

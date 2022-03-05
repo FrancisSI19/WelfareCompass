@@ -7,8 +7,8 @@ const StyledModalButton = StyleSheet.create({
         height: 40,
         textAlign: 'center',
         alignItems: 'center',
-        marginTop: 500,
-        borderRadius: 30
+        borderRadius: 30,
+        marginTop: 60,        
 
     },
 });

@@ -10,10 +10,9 @@ const StyledRegister = StyleSheet.create({
     width: 360,
     height: 100,
     alignItems: 'center',
-    
-    flexDirection: 'row',
     borderWidth: 2,
     borderColor: '#4169e1',
+    
     
   },
   activityInput: {
@@ -23,9 +22,12 @@ const StyledRegister = StyleSheet.create({
     alignItems: 'center',
     marginVertical: 10,
     marginHorizontal: 10,
-
-    color: '#a9a9a9',
+    color:'#000000',
     borderColor: '#4169e1',
+    alignItems: 'center',
+    borderWidth: 2,
+    marginTop: 300
+  
  },
 });
 

@@ -54,9 +54,6 @@ const StyledEmotions = StyleSheet.create({
     marginHorizontal: 10,
     flexDirection: 'row'
   },
-  dividerFooter: {
-    marginTop: 950
-  },
 
        
  });

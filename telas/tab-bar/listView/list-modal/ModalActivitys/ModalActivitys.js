@@ -82,12 +82,30 @@ function ModalActivitys({name}) {
         return (
             
             <View style={StyledActivitys.information}>
-                <TouchableOpacity onPress={() => {
-                                 selectActivities()
-                }}>
-                    <FontAwesome5 name={activitieList} style={StyledActivitys.activityIcon} />
-                    <Text style={StyledActivitys.activity}>{ textActivitie}</Text>
-                </TouchableOpacity>
+                <View
+                     style={{
+                        borderColor: borderColor,
+                        borderWidth: borderWidth,
+                        borderRadius: borderRadius,
+                        width: 60,
+                        height: 60,
+                        marginTop: 10,
+                        marginBottom: 10,
+                    }}
+                >
+                    <TouchableOpacity onPress={() => {
+                        selectActivities()
+                    }}
+                   
+                    >
+                        
+                        <FontAwesome5 name={activitieList}
+                            style={StyledActivitys.activityIcon}
+                           
+                        />
+                        <Text style={StyledActivitys.activity}>{textActivitie}</Text>
+                    </TouchableOpacity>
+                    </View>
             </View>
       
     );

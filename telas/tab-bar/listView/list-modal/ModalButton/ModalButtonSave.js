@@ -11,7 +11,7 @@ function SaveRegister({ navigation }) {
             <Button
             title="SALVAR"
             onPress={() => {
-            navigation.navigate('RegisterDaily')
+            navigation.navigate('ListView')
             }}/>
         </View>
    );

@@ -1,7 +1,6 @@
 import React from "react";
 import { StyleSheet } from 'react-native';
 
-
 const StyledRegister = StyleSheet.create({
   dividerRegister: {
     
@@ -12,8 +11,6 @@ const StyledRegister = StyleSheet.create({
     alignItems: 'center',
     borderWidth: 2,
     borderColor: '#4169e1',
-    
-    
   },
   activityInput: {
     borderRadius: 30,
@@ -26,9 +23,7 @@ const StyledRegister = StyleSheet.create({
     borderColor: '#4169e1',
     alignItems: 'center',
     borderWidth: 2,
-    marginTop: 300
-  
- },
+},
 });
 
 

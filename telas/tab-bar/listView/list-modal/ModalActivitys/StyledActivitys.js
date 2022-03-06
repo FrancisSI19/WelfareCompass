@@ -15,8 +15,6 @@ const StyledActivitys = StyleSheet.create({
       fontSize: 10,
       fontWeight: 'bold',
       textAlign: 'center',
-      
-
   },
   activityIcon: {
     color:'#000000',
@@ -28,7 +26,6 @@ const StyledActivitys = StyleSheet.create({
     height: 60,
     textAlign: 'center',
     textAlignVertical: 'center',
-    
   },
  
   divider: {
@@ -40,11 +37,7 @@ const StyledActivitys = StyleSheet.create({
     marginHorizontal: 10,
     borderWidth: 2,
     borderColor: '#4169e1',
-    marginTop: 280,
-    
   },
-  
-       
  });
 
 

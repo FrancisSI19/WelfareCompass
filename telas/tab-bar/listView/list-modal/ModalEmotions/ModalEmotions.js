@@ -19,6 +19,7 @@ import confused from '../../../../assets/humores/confused.png';
 
 import DateTime from "../ModalDateTime/ModalDateTime";
 import ModalActivitys from "../ModalActivitys/ModalActivitys";
+import RegisterDaily from "../../RegisterDaily";
 
 
 
@@ -83,7 +84,7 @@ function ModalEmotions({navigation}) {
       </View>
           
       <View>
-          
+              <RegisterDaily />
               <ModalRegister />
             </View>
           </Modal>

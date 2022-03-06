@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { View, Text, FlatList } from "react-native";
+import { View, FlatList } from "react-native";
 import ModalActivitys from "./list-modal/ModalActivitys/ModalActivitys";
 
 import ApiService from "../../Services/ApiService";
-import ModalEmotions from "./list-modal/ModalEmotions/ModalEmotions";
 import StyledActivitys from "./list-modal/ModalActivitys/StyledActivitys";
+
 function RegisterDaily() {
     const [activities, setActivities] = useState([]);
 

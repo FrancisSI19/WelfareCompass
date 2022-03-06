@@ -2,22 +2,26 @@ import React, { useEffect, useState } from "react";
 import {
     Text,
     View,
-    SafeAreaView,
     TouchableOpacity,
-    Modal,
-    ScrollView
+    
 } from "react-native";
 import FontAwesome5 from "react-native-vector-icons/FontAwesome5";
 
 import StyledActivitys from "./StyledActivitys";
-import ModalEmotions from "../ModalEmotions/ModalEmotions";
 
 
 function ModalActivitys({name}) {
     
     const [activitie, setActivitie] = useState(name);
     const [activitieList, setActivitieList] = useState();
-    const [textActivitie, setTextActivitie] = useState('');    
+    const [textActivitie, setTextActivitie] = useState('');
+    
+    //Seleção das atividades
+    const [borderRadius, setBorderRadius] = useState();
+    const [borderColor, setBorderColor] = useState();
+    const [borderWidth, setBorderWidth] = useState();
+    const [activitieSelect, setactivitieSelect] = useState(false);
+    
     
         function selectionActivities() {
             if(activitie === "sports") {
@@ -60,25 +64,31 @@ function ModalActivitys({name}) {
         }
         useEffect(() => { selectionActivities() }, [])
         
+    function selectActivities() {
+        if (activitieSelect === false) {
+            setBorderWidth(4)
+            setBorderColor('blue')
+            setBorderRadius(30)
+            setactivitieSelect(true)
+        }
+        if (activitieSelect === true) {
+            setBorderWidth(0)
+            setBorderColor('')
+            setBorderRadius(0)
+            setactivitieSelect(false)
+            }
+        }
                 
         return (
             
-            <SafeAreaView style={StyledActivitys.information}>
-            <View>
-                <ModalEmotions />
-                <View >
-                        <View>
-                            <TouchableOpacity>
-                                <FontAwesome5 name={activitieList} style={StyledActivitys.activityIcon} />
-                                <Text style={StyledActivitys.activity}>{ textActivitie}</Text>
-                            </TouchableOpacity>
-                        
-                        </View>
-                  
-                    </View>
+            <View style={StyledActivitys.information}>
+                <TouchableOpacity onPress={() => {
+                                 selectActivities()
+                }}>
+                    <FontAwesome5 name={activitieList} style={StyledActivitys.activityIcon} />
+                    <Text style={StyledActivitys.activity}>{ textActivitie}</Text>
+                </TouchableOpacity>
             </View>
-            
-        </SafeAreaView>
       
     );
     

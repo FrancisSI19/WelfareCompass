@@ -9,6 +9,7 @@ import Login from "../Login/Login";
 import NewRegister from "../cadastrar/NewRegister";
 import RegisterDaily from "../tab-bar/listView/RegisterDaily";
 import ModalActivitys from "../tab-bar/listView/list-modal/ModalActivitys/ModalActivitys";
+import ModalEmotions from "../tab-bar/listView/list-modal/ModalEmotions/ModalEmotions";
 
 
 

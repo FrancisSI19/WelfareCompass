@@ -23,6 +23,7 @@ const StyledRegister = StyleSheet.create({
     borderColor: '#4169e1',
     alignItems: 'center',
     borderWidth: 2,
+    
 },
 });
 

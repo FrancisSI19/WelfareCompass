@@ -21,6 +21,7 @@ import confused from '../../../../assets/humores/confused.png';
 
 import DateTime from "../ModalDateTime/ModalDateTime";
 import RegisterDaily from "../../RegisterDaily";
+import ListSelectEmotions from "./ListSelectEmotions";
 
 
 function ModalEmotions({navigation}) {
@@ -29,29 +30,22 @@ function ModalEmotions({navigation}) {
       const [borderRadius, setBorderRadius] = useState();
       const [borderColor, setBorderColor] = useState();
       const [borderWidth, setBorderWidth] = useState();
-      const [activitieSelect, setactivitieSelect] = useState(false);
-      const styleSelections = StyleSheet.create({
-        styledSelect:{
-          borderColor: borderColor,
-          borderWidth: borderWidth,
-          borderRadius: borderRadius,
-          width: 50,
-          height: 50,
-          alignItems: 'center',
-        },
-      })
-      function selectActivities() {
-        if (activitieSelect === false) {
+      const [emotionSelect, setEmotionSelect] = useState(false);
+      
+      
+       
+      function selectEmotions() {
+        if (emotionSelect === false) {
             setBorderWidth(4)
             setBorderColor('blue')
             setBorderRadius(30)
-            setactivitieSelect(true)
+            setEmotionSelect(true)
         }
-        if (activitieSelect === true) {
+        if (emotionSelect === true) {
             setBorderWidth(0)
             setBorderColor('')
             setBorderRadius(0)
-            setactivitieSelect(false)
+            setEmotionSelect(false)
             }
         }
   return (
@@ -80,41 +74,9 @@ function ModalEmotions({navigation}) {
               
             </View>
                   
-              
-              <View style={StyledEmotions.divider}>
-                  
-                
-                    <View style={StyledEmotions.divider}>
-                      <View>
-                      <TouchableOpacity onPress={() => {
-                  selectActivities()
-                  
-                }}>
-                        <Image source={sleeping} style={StyledEmotions.image} />
-                <Text style={StyledEmotions.feeling}>Sono</Text>
-                </TouchableOpacity>
-                      </View>
-                    
-                          <View>
-                              <Image source={happy} style={StyledEmotions.image} />
-                              <Text style={StyledEmotions.feeling}>Feliz</Text>
-                          </View>
-                            <View>
-                              <Image source={nervous} style={StyledEmotions.image} />
-                              <Text style={StyledEmotions.feeling}>Preocupado</Text>
-                            </View>
-                              <View>
-                                <Image source={sad} style={StyledEmotions.image} />
-                                <Text style={StyledEmotions.feeling}>Triste</Text>
-                              </View>
-                        
-                                <View>
-                                  <Image source={confused} style={StyledEmotions.image} />
-                                  <Text style={StyledEmotions.feeling}>Cansado</Text>
-                                </View>
-                      </View>
-                
-              </View>
+        <View>
+          <ListSelectEmotions />
+            </View>
               
             </View>
            

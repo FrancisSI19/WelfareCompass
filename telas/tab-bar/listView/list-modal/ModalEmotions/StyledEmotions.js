@@ -52,7 +52,8 @@ const StyledEmotions = StyleSheet.create({
     alignItems: 'center',
     marginVertical: 10,
     marginHorizontal: 10,
-    flexDirection: 'row'
+    flexDirection: 'row',
+    
   },
 
        

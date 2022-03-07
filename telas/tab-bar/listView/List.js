@@ -16,7 +16,7 @@ function ListEmotions() {
             ApiService.get("daily_entries/?username=francislene")
                 .then(response => {
                   const data = response.data
-                  const resultado = json.parse(item[0].raw)= resultado.daily_entry.mood
+                  const result = json.parse(item[0].raw)= result.daily_entry.mood
                   console.warn(data)
                   setEmotions(data)
                 })

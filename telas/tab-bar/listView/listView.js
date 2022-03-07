@@ -5,13 +5,14 @@ import StyledListView from "../styledList/StyledListView";
 
 import Entypo from 'react-native-vector-icons/Entypo';
 import SimpleLineIcons from "react-native-vector-icons/SimpleLineIcons";
-
+import ModalEmotions from "./list-modal/ModalEmotions/ModalEmotions";
 
 
 function ListView({ route: {params} , navigation }) {
-  const { itemSelect } = params;
-  const { image, time, date, feeling, activity1, activityIcon1,
+  //const { itemSelect } = params;
+  /*const { image, time, date, feeling, activity1, activityIcon1,
           activity2, activityIcon2, activity3, activityIcon3, register, color } = itemSelect;
+  */
   
   
    return (
@@ -27,11 +28,11 @@ function ListView({ route: {params} , navigation }) {
           </View>
            
           <View>
-            <Text style={StyledListView.time}>
-            <Entypo name="clock" style={StyledListView.iconTime} />
-              {time}
-            </Text>
-            </View>
+            <Text>{route.params?.ModalEmotions}</Text>
+       </View>
+       
+       
+        {/*
         <View>
          <Text style={StyledListView.date}>
            <SimpleLineIcons name="calendar" style={StyledListView.iconCalendar}/>
@@ -65,6 +66,7 @@ function ListView({ route: {params} , navigation }) {
         <View style={StyledListView.divider}>
             <Text style={StyledListView.register}>{register}</Text>
         </View>
+       */}
                   
         
                    

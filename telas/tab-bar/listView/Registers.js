@@ -1,54 +1,38 @@
 import React from "react";
-import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
-import FontAwesome5 from "react-native-vector-icons/FontAwesome5";
-import AntDesign from "react-native-vector-icons/AntDesign";
+import icons from "./icons/RegisterIcons";
 
-const sleeping = require("../../assets/humores/sleeping.png");
+const confused = require("../../assets/humores/confused.png");
 const happy = require("../../assets/humores/happy.png");
-const sad = require("../../assets/humores/sad.png");
+const sleeping = require("../../assets/humores/sleeping.png");
 const nervous = require("../../assets/humores/nervous.png");
 
 
 const myRegister = [
   {
     id: "1",
-    image: sad,
-    feeling: "TRISTE",
-    color: "#808080",
-    
+    date: "14 de Fevereiro de 2022",
+    image: confused,
+    feeling: "CONFUSO",
+    time: "07:00",
+    activity1: { name:"Meditação", icons:"calendar"},
+    activity2: "Estudo",
+    activity3: "Esporte",
+    register: "Hoje acordei, li a bíblia, orei, fui para a academia, fiz um delicioso almoço."
+
   },
-  
   {
     id: "2",
-    image: nervous,
-    feeling: "PREOCUPADO",
-    color: "#ff0000",
-    
-  },
+    date: "15 de Fevereiro de 2022",
+    image: happy,
+    feeling: "FELIZ",
+    time: "07:00",
+    activity1: { name:"Estudo", icons:"calendar"},
+    activity2: "Cozinhar",
+    activity3: "Esporte",
+    register: "Hoje acordei, li a bíblia, orei, fui para a academia, fiz um delicioso almoço."
+},
+  
 
-  {
-    id: "3",
-    image: happy,
-    feeling: "FELIZ",
-    color: '#4169e1',
-    
-  },
-  {
-    id: "4",
-    image: happy,
-    feeling: "FELIZ",
-    color: '#4169e1',
-    
-  },
-  {
-    id: "5",
-    image: sleeping,
-    feeling: "CANSADO",
-    color: '#008000',
-    
-  },
 ];
 
 export default myRegister;
-
-

@@ -41,6 +41,9 @@ function ListEmotions() {
         
       </View>  
 
+
+      
+
     );
 }
 export default ListEmotions;

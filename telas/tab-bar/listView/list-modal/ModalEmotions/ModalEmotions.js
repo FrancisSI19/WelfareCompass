@@ -4,47 +4,39 @@ import {
   View,
   TouchableOpacity,
   Modal,
+  Button
 } from "react-native";
 
 import ModalRegister from "../ModalRegister/ModalRegister";
 import StyledEmotions from "./StyledEmotions";
 import AntDesign from "react-native-vector-icons/AntDesign";
-
-i
 import DateTime from "../ModalDateTime/ModalDateTime";
 import RegisterDaily from "../../RegisterDaily";
 import ListSelectEmotions from "./ListSelectEmotions";
-import ListView from "../../listView";
-import { useNavigation } from "@react-navigation/native";
+import ApiService from "../../../../Services/ApiService";
 
 
-function ModalEmotions({ navigation }) {
+function ModalEmotions({navigation}) {
   
   const [visivel, setVisivel] = useState(true);
-  const navigation = useNavigation();
-
-  const [borderRadius, setBorderRadius] = useState();
-  const [borderColor, setBorderColor] = useState();
-  const [borderWidth, setBorderWidth] = useState();
-  const [emotionSelect, setEmotionSelect] = useState(false);
-      
-       
-      function selectEmotions() {
-        if (emotionSelect === false) {
-            setBorderWidth(4)
-            setBorderColor('blue')
-            setBorderRadius(30)
-            setEmotionSelect(true)
-        }
-        if (emotionSelect === true) {
-            setBorderWidth(0)
-            setBorderColor('')
-            setBorderRadius(0)
-            setEmotionSelect(false)
-            }
-        }
+  const [userApi, setUserApi] = useState({
+    daily_entry: {
+      mood: "nervous",
+      activity_ids: [2, 4, 7],
+      description: "Ralando muito",
+      username: "francislene"
+    }
+  })
   
-  navigation.navigate("ListView", { ModalEmotions });
+    
+function postModal(valor){
+    ApiService.post("daily_entries/",valor)
+      .then(response =>{
+        const data = response.data  
+        console.warn(data)
+  })
+    .catch(error => console.warn(error))
+  }
   return (
         <Modal
               animationType="slide"
@@ -80,6 +72,11 @@ function ModalEmotions({ navigation }) {
                   <View>
                     <RegisterDaily />
                     <ModalRegister />
+                    <Button
+                      title="SALVAR"
+                      onPress={() => {
+                      [postModal(userApi), navigation.navigate("ListApi")]
+                    }}/>
                   </View>
     </Modal>
   

@@ -1,5 +1,5 @@
 import { StyleSheet } from 'react-native';
-import myRegister from '../listView/Registers';
+
 
  const StyledList = StyleSheet.create({
    information: {

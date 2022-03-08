@@ -4,11 +4,12 @@ import Routers from './telas/router/Routers';
 import { NavigationContainer } from '@react-navigation/native';
 
 
+
 function App() {
 
   return (
     <NavigationContainer>
-      <Routers />
+     <Routers />
     </NavigationContainer>
   );
 }

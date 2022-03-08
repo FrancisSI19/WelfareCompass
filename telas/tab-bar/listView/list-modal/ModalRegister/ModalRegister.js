@@ -9,7 +9,6 @@ function ModalRegister() {
             <TextInput
                 placeholderTextColor={"black"}
                 placeholder="Conte como foi seu dia hoje." />
-            <SaveRegister />
         </View>
     );
 }

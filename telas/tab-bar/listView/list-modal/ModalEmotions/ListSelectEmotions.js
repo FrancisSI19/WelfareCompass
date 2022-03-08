@@ -22,7 +22,7 @@ function ListSelectEmotions() {
       const [borderColor, setBorderColor] = useState();
       const [borderWidth, setBorderWidth] = useState();
       const [emotionSelect, setEmotionSelect] = useState(false);
-      
+        
       
        
       function selectEmotions() {

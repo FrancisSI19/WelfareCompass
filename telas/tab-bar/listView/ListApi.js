@@ -1,13 +1,12 @@
 import React,{useState, useEffect} from "react";
 
 import { Text, Image, View } from "react-native";
-import { act } from "react-test-renderer";
 import StyledList from "../styledList/StyledList";
 import DateTime from "./list-modal/ModalDateTime/ModalDateTime";
 import ListApiActivities from "./ListApiActivities";
 
 
-function ListApi({ mood, activities }) {
+function ListApi({ mood, activities, short_description }) {
 
   const [emotion, setEmotion] = useState();
   const [emotionList, setEmotionList] = useState(mood);
@@ -55,6 +54,7 @@ function ListApi({ mood, activities }) {
         {activities.map(activities => (
           <ListApiActivities{...activities} />
         ))}
+        <Text style={StyledList.register}>{short_description}</Text>
       </View>
       
       </View>

@@ -5,9 +5,8 @@ import Entypo from 'react-native-vector-icons/Entypo';
 import AntDesegin from 'react-native-vector-icons/AntDesign';
 import Feather from 'react-native-vector-icons/Feather';
 
-import Login from "../Login/Login";
 import NewRegister from "../cadastrar/NewRegister";
-import ModalEmotions from "../tab-bar/listView/list-modal/ModalEmotions/ModalEmotions";
+import ListEmotions from "../tab-bar/listView/List";
 
 
 
@@ -67,7 +66,7 @@ function RouterHome() {
           
             <Tab.Screen
                 name="New "
-                component={ModalEmotions}
+                component={ListEmotions}
                 options={{
                     tabBarLabel: '',
                     tabBarIcon: ({ size, color }) =>
@@ -85,24 +84,3 @@ function RouterHome() {
 }
 
 export default RouterHome;
-
-
-/*
-screenOptions={({ route }) => ({
-                    tabBarIcon: ({ focused, color, size }) => {
-                      let iconName;
-          
-                      if (route.name === 'Home') {
-                        iconName = focused
-                          ? 'ios-information-circle'
-                          : 'ios-information-circle-outline';
-                      } else if (route.name === 'Settings') {
-                        iconName = focused ? 'ios-list-box' : 'ios-list';
-                      }
-          
-                    return <Entypo name="home" size={size} color={color} />;
-                    },
-                    tabBarActiveTintColor: 'tomato',
-                    tabBarInactiveTintColor: 'gray',
-                  })}
-                  */

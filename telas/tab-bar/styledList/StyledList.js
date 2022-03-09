@@ -6,10 +6,10 @@ import { StyleSheet } from 'react-native';
       padding: 10,
    },
     image: {
-      width: 60,
-      height: 60,
+      width: 40,
+      height: 40,
       marginLeft: 10,
-      marginTop: 60,
+     
     },
     date: {
       color: '#808080',
@@ -31,7 +31,7 @@ import { StyleSheet } from 'react-native';
       fontSize: 16,
       fontWeight: 'bold',
       flexDirection: 'row',
-      marginLeft: 45,
+      color: 'black'
     },
     activity: {
         color:'#000000',

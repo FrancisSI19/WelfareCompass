@@ -75,7 +75,7 @@ function postModal(valor){
                     <Button
                       title="SALVAR"
                       onPress={() => {
-                      [postModal(userApi), navigation.navigate("ListApi")]
+                      [postModal(userApi), navigation.navigate("ListEmotions")]
                     }}/>
                   </View>
     </Modal>

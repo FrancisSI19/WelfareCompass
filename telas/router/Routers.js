@@ -18,7 +18,7 @@ function Routers() {
             <Stack.Screen name="Home" component={Login} />
             <Stack.Screen name="RouterHome" component={RouterHome} />
             <Stack.Screen name="ModalEmotions" component={ModalEmotions} />
-            <Stack.Screen name="ListApi" component={ListApi}/>
+            <Stack.Screen name="ListEmo" component={ListApi}/>
             
         </Stack.Navigator>
         
